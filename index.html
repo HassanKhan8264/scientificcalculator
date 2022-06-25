@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="frame">
+
+        <div id="display"><svg  onClick="refresh()" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></svg></div>
+        <div class="buttons">
+            <div class="line1">
+                <button onClick=""  id="Deg"><span>Rad</span>|<span id="light">Deg</span></button>
+                <button onClick="" id="lightbg">x!</button>
+                <button onClick="" id="lightbg">(</button>
+                <button onClick="" id="lightbg">)</button>
+                <button onClick="" id="lightbg">%</button>
+                <button onClick="" id="lightbg">AC</button>
+            </div>
+            <div class="line2">
+                <button onClick="" id="lightbg">Inv</button>
+                <button onClick="" id="lightbg">sin</button>
+                <button onClick="" id="lightbg">In</button>
+                <button onClick="getValue7()" id="number">7</button>
+                <button onClick="getValue8()" id="number">8</button>
+                <button onClick="getValue9()" id="number">9</button>
+                <button onClick="divide()" id="lightbg">/</button>
+
+            </div>
+            <div class="line3">
+                <button onClick="" id="lightbg">_</button>
+                <button onClick="" id="lightbg">cos</button>
+                <button onClick="" id="lightbg">log</button>
+                <button onClick="getValue4()" id="number">4</button>
+                <button onClick="getValue5()" id="number">5</button>
+                <button onClick="getValue6()" id="number">6</button>
+                <button onClick="multiply()" id="lightbg">*</button>
+
+            </div>
+            <div class="line4">
+                <button onClick="" id="lightbg">e</button>
+                <button onClick="" id="lightbg">tan</button>
+                <button onClick="" id="lightbg">^</button>
+                <button onClick="getValue1()" id="number">1</button>
+                <button onClick="getValue2()" id="number">2</button>
+                <button onClick="getValue3()" id="number">3</button>
+                <button onClick="minus()" id="lightbg">-</button>
+
+            </div>
+            <div class="line5">
+                <button onClick="" id="lightbg">Ans</button>
+                <button onClick="" id="lightbg">EXP</button>
+                <button onClick="" id="lightbg">X<sup>y</sup></button>
+                <button onClick="" id="number">0</button>
+                <button onClick="" id="number">.</button>
+                <button onClick="answer()" id="equal">=</button>
+                <button onClick="plus()" id="lightbg">+</button>
+
+            </div>
+           
+        </div>
+    </div>
+    <!-- <button onClick="getValue1()">1</button>
+    <button onClick="getValue2()">2</button>
+    <button onClick="getValue3()">3</button>
+    <button onClick="getValue4()">4</button>
+    <button onClick="getValue5()">5</button>
+    <button onClick="plus()">+</button>
+    <button onClick="minus()">-</button>
+    <button onClick="multiply()">*</button>
+    <button onClick="answer()">=</button> -->
+
+    <!-- best practices -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
