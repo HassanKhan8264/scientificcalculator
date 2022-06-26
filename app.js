@@ -1,5 +1,5 @@
 var inputData;
-
+var minus;
 function getValue1() {
     var value = 1;
     display(value)
@@ -60,13 +60,61 @@ function answer() {
     var value = "="
     display(value)
 }
+function lb() {
+    var value = "("
+    display(value)
+}
+function rb() {
+    var value = ")"
+    display(value)
+}
+function percent() {
+    var value = "%"
+    display(value)
+}
+function sin(){
+    var value = Math.sin(3.14)
+    display(value)
+}
+function log(){
+    var value = Math.log(0)
+    display(value)
+}
+function cos(){
+    var value = Math.cos(0)
+    display(value)
+}
+function tan(){
+    var value = Math.tan(0)
+    display(value)
+}
+function c(){
+    var value = "C"
+    display(value)
+}
+function allclear(){
+    var value = "AC"
+    display(value)
+}
+// var naam;
 function display(v) {
     if (v === "=") {
         inputData = document.getElementById("display")
         let data = inputData.innerText
         let total = eval(data) // 1 + 1
         document.getElementById("display").innerText = total
-    } else {
+    }else if(v === "C"){
+        let inputData = document.getElementById("display")
+        let data = inputData.innerText
+        total =   document.getElementById("display").innerText = data.substring(0, data.length-1) 
+    } 
+    else if(v === "AC"){
+        let inputData = document.getElementById("display")
+        let data = inputData.innerText
+        total =   document.getElementById("display").innerText = ""
+    } 
+      
+    else{
         document.getElementById("display").innerText += v
     }
 }

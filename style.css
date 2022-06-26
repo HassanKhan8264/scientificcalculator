@@ -163,3 +163,16 @@ body{
 #equal:hover{
     background-color:aliceblue;
 }
+@media screen and (max-width:610px) {
+    .frame{
+        width: 90%;
+    }
+    .buttons{
+        /* width: 100%; */
+        /* background-color: red; */
+    }
+    .line1{
+        /* flex-wrap: wrap; */
+    }
+    
+}
